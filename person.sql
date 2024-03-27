@@ -9,6 +9,12 @@ INSERT INTO car (make,model,price) VALUES ('Toyota', 'Xtra', '676183090054386800
 INSERT INTO car (make,model,price) VALUES ('Ford', 'f150', '6761830900543868002');
 INSERT INTO car (make,model,price) VALUES ('RR', 'ghost', '6761830900543868002');
 
+INSERT INTO public.user (full_name,email,phone_number,password,boat_user_id,user_type) values ('Ben Jacksons','mathew@theagromal.com','+2349066027357','$2b$11$rdrNFqnDj6qs5DlqNx7JJOFw4LR2P/oXu2MALGcv6Eai2mKGzPPHS','ced0f0b8-3d6a-42f9-be41-af1f5b4305f0','user');
+INSERT INTO public.user (email,phone,password,activated,first_name,last_name,gender) VALUES ('olamide@lmu.com','+2348135141662','$2b$11$rdrNFqnDj6qs5DlqNx7JJOFw4LR2P/oXu2MALGcv6Eai2mKGzPPHS',true,'Temi','Olamide','male');
+INSERT INTO public.user (full_name,email,phone_number,password,boat_user_id,user_type) values ('Temi Olamide','owolabi@lmu.com','+2348135141668','$2b$11$rdrNFqnDj6qs5DlqNx7JJOFw4LR2P/oXu2MALGcv6Eai2mKGzPPHS','aecf7765-7185-4dea-bd1d-002f65aa9a88','agent');
+
+INSERT INTO public.user (full_name,email,phone_number,password,boat_user_id,user_type) values ('Temi Olamide','owolabi1@lmu.com','+2348135141669','$2a$11$5SNpOLB2.ZNuVrRLuDnW3exCkB3e73RYoqp/qjJ0LP9/P3rjYIcgG','9462d103-d057-4ec3-b4a7-a34da9b080f3','agent');
+
 CREATE TABLE person( 
     id BIGSERIAL PRIMARY KEY NOT NULL,
     first_name VARCHAR(50) NOT NULL,
