@@ -140,3 +140,9 @@ insert into car (id , make, model, price) values (97, 'Nissan', '370Z', '3557776
 insert into car (id , make, model, price) values (98, 'Pontiac', 'Aztek', '3578745469090787');
 insert into car (id , make, model, price) values (99, 'GMC', 'Yukon XL 1500', '3574683207606008');
 insert into car (id , make, model, price) values (100, 'Mazda', 'B-Series', '30587422944330');
+
+
+insert into public.user (email,first_name,last_name,phone,activated,password,school_id,account_type) values ('tboyolamide@gmail.com','temi','owolabi','08144210037',true,'$2a$11$qLjjZ1.j7IE6/DRCfRu1lebTrrGkODa.XxYCfAhadmg0/pWQfTng6','6780c925-88bc-4f96-896b-6220d8e83537','staff');
+
+
+-- password = $2a$11$qLjjZ1.j7IE6/DRCfRu1lebTrrGkODa.XxYCfAhadmg0/pWQfTng6
