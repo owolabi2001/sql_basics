@@ -11,7 +11,7 @@ SELECT * FROM tableName ORDER BY tableName.columnName ASC; -where ASC means asse
 SELECT * FROM tableName ORDER BY tableName.columnName DESC; - where DESC means descending order
 SELECT columnName1,columnNamE2 FROM tableName
 SELECT DISTINCT columnName FROM tableName ORDER BY tableName.columnName ASC
-SELECT * FROM tableName WHERE tableName.columnName1 = 'columnParamter' AND (tableName.columnNamE2 = 'columnParamter2' OR tableName.columnNamE2='columnNamE2');
+SELECT * FROM tableName WHERE tableName.columnName1 = 'columnParameter' AND (tableName.columnNamE2 = 'columnParamter2' OR tableName.columnNamE2='columnNamE2');
 SELECT * FROM tableName LIMIT 10 - this will limit your query output to 1st 10
 SELECT * FROM tableName OFFSET 10 LIMIT 15 - this will jump the 1st 10 records and pass the next 15
 SELECT * FROM tableName FETCH FIRST 6 ROW  - SAME thing as limit
@@ -21,6 +21,6 @@ SELECT columnName, COUNT(*) FROM tableName GROUP BY tableName.columnName - this 
 SELECT columnName, COUNT(*) FROM tableName GROUP BY tableName.columnName HAVING COUNT(*)>4 - this will show record groups whose counts is greater than 4
 ALTER TABLE tableName ADD CONSTRAINT unique_email_address UNIQUE (columnName);
 ALTER TABLE tableName DROP CONSTRAINT unique_email_address UNIQUE (columnName);
-DELETE FROM tableName WHERE columnName = 'columnParamter'; 
-ALTER TABLE tableName ADD CONSTRAINT gender_constraint CHECK(tableName.columnName = 'columnParamter' OR  tableName.columnName = 'columnParamter2');
-UPDATE tableName SET tableName.columnName = 'new columnParamter' WHERE tableName.columnName1 = "a field"
+DELETE FROM tableName WHERE columnName = 'columnParameter'; 
+ALTER TABLE tableName ADD CONSTRAINT gender_constraint CHECK(tableName.columnName = 'columnParameter' OR  tableName.columnName = 'columnParameter2');
+UPDATE tableName SET tableName.columnName = 'new columnParameter' WHERE tableName.columnName1 = "a field"
